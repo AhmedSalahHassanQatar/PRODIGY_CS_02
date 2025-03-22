@@ -72,8 +72,10 @@ If a pixel has a value of 200, and we XOR it with 42:
 This ensures that the encryption is perfectly reversible.
 
 📌 Summary of the Process
-Step	Action
-1️⃣ Load Image	Open the image and convert it to an array
+
+Step 1️⃣ Load Image		
+
+Action: Open the image and convert it to an array
 
 2️⃣ Encrypt	Apply XOR with a key to scramble pixel values
 
@@ -94,9 +96,14 @@ Step	Action
    ├── 🔓 decrypted.png (Decrypted image)
 
    ├── 🐍 image_encryptor.py (Python script)
+
 📢 Final Notes
+
 ✔ This project demonstrates pixel manipulation encryption using XOR operations.
+
 ✔ The same script encrypts and decrypts the image when run twice.
+
 ✔ You can change the encryption key to make the encryption more secure.
+
 ✔ This method is not suitable for strong security applications but is a great learning tool for image processing and encryption basics.
 
