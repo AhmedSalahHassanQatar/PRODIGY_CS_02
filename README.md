@@ -1,5 +1,6 @@
 # PRODIGY_CS_02
 🔐 Pixel Manipulation for Image Encryption
+
 📌 Introduction
 This project demonstrates image encryption using pixel manipulation by swapping and modifying pixel values. Instead of traditional cryptographic methods, we use XOR operations to scramble pixel data, making the image unreadable until it is decrypted using the same technique.
 
