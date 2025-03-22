@@ -59,10 +59,12 @@ To decrypt, we simply run the same XOR operation again. Since XOR is reversible,
 decrypted_array = encrypted_array ^ key  # XOR again with the same key
 decrypted_image = Image.fromarray(decrypted_array)  # Convert back to image
 decrypted_image.save("decrypted.png")  # Save decrypted image
+
 ✔ Why does this work?
 XORing a value twice with the same key returns the original value:
 
 (A XOR K) XOR K = A
+
 ✔ Example:
 If a pixel has a value of 200, and we XOR it with 42:
 
@@ -73,15 +75,15 @@ This ensures that the encryption is perfectly reversible.
 
 📌 Summary of the Process
 
-1️⃣ Step: Load Image		            Action: Open the image and convert it to an array
+1️⃣ Step: Load Image		           | Action: Open the image and convert it to an array
 
-2️⃣ Step: Encrypt	                  Action: Apply XOR with a key to scramble pixel values
+2️⃣ Step: Encrypt	                 | Action: Apply XOR with a key to scramble pixel values
 
-3️⃣ Step: Save Encrypted Image	      Action: Store the encrypted result
+3️⃣ Step: Save Encrypted Image	     | Action: Store the encrypted result
 
-4️⃣ Step: Decrypt                    Action: XOR again with the same key to restore the image
+4️⃣ Step: Decrypt                   | Action: XOR again with the same key to restore the image
 
-5️⃣ Step: Save Decrypted Image       Action: Store the restored image
+5️⃣ Step: Save Decrypted Image    |   Action: Store the restored image
 
 📂 Folder Setup
 
