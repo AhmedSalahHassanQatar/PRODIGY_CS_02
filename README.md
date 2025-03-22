@@ -73,17 +73,15 @@ This ensures that the encryption is perfectly reversible.
 
 📌 Summary of the Process
 
-Step 1️⃣ Load Image		
+1️⃣ Step: Load Image		            Action: Open the image and convert it to an array
 
-Action: Open the image and convert it to an array
+2️⃣ Step: Encrypt	                  Action: Apply XOR with a key to scramble pixel values
 
-2️⃣ Encrypt	Apply XOR with a key to scramble pixel values
+3️⃣ Step: Save Encrypted Image	      Action: Store the encrypted result
 
-3️⃣ Save Encrypted Image	Store the encrypted result
+4️⃣ Step: Decrypt                    Action: XOR again with the same key to restore the image
 
-4️⃣ Decrypt	XOR again with the same key to restore the image
-
-5️⃣ Save Decrypted Image	Store the restored image
+5️⃣ Step: Save Decrypted Image       Action: Store the restored image
 
 📂 Folder Setup
 
