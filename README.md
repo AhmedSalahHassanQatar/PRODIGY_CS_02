@@ -1,16 +1,21 @@
 # PRODIGY_CS_02
-🔐 Pixel Manipulation for Image Encryption
-📌 Introduction
+### 🔐 Pixel Manipulation for Image Encryption
+
+### 📌 Introduction
 This project demonstrates image encryption using pixel manipulation by swapping and modifying pixel values. Instead of traditional cryptographic methods, we use XOR operations to scramble pixel data, making the image unreadable until it is decrypted using the same technique.
 
 This method is useful for:
+
 ✔ Basic image obfuscation for privacy protection
+
 ✔ Custom encryption experiments in cybersecurity research
+
 ✔ Understanding pixel-level image transformations
 
 The encryption is reversible, meaning the same script can restore the original image.
 
 🛠️ Step-by-Step Explanation of the Code
+
 1️⃣ Load the Image
 We use the Pillow (PIL) library to open an image file and convert it into a NumPy array. This allows us to manipulate pixel values directly.
 
@@ -65,15 +70,25 @@ This ensures that the encryption is perfectly reversible.
 📌 Summary of the Process
 Step	Action
 1️⃣ Load Image	Open the image and convert it to an array
+
 2️⃣ Encrypt	Apply XOR with a key to scramble pixel values
+
 3️⃣ Save Encrypted Image	Store the encrypted result
+
 4️⃣ Decrypt	XOR again with the same key to restore the image
+
 5️⃣ Save Decrypted Image	Store the restored image
+
 📂 Folder Setup
+
 📁 Image-Encryption-Project
+
    ├── 🖼 input.jpg    (Your original image)
+
    ├── 🔐 encrypted.png (Encrypted image)
+
    ├── 🔓 decrypted.png (Decrypted image)
+
    ├── 🐍 image_encryptor.py (Python script)
 📢 Final Notes
 ✔ This project demonstrates pixel manipulation encryption using XOR operations.
