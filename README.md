@@ -17,7 +17,8 @@ The encryption is reversible, meaning the same script can restore the original i
 🛠️ Step-by-Step Explanation of the Code
 
 1️⃣ Load the Image
-We use the Pillow (PIL) library to open an image file and convert it into a NumPy array. This allows us to manipulate pixel values directly.
+We use the Pillow (PIL) library to open an image file and convert it into a NumPy array.
+This allows us to manipulate pixel values directly.
 
 from PIL import Image
 import numpy as np
@@ -25,7 +26,9 @@ import numpy as np
 # Load the image
 img = Image.open("input.jpg")  # Load the target image
 img_array = np.array(img)  # Convert image to a NumPy array
+
 2️⃣ Encrypt the Image (Pixel Manipulation)
+
 We use XOR encryption with a numeric key to scramble pixel values.
 
 ✔ Why XOR?
@@ -39,6 +42,7 @@ encrypted_array = img_array ^ key  # XOR each pixel with the key
 Each pixel’s RGB value is modified by XORing it with the key (42), making the image unrecognizable.
 
 3️⃣ Save the Encrypted Image
+
 We convert the modified array back into an image and save it as encrypted.png.
 
 output_image = Image.fromarray(encrypted_array)  # Convert back to image
